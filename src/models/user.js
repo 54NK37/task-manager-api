@@ -1,4 +1,6 @@
 const mongoose = require('mongoose')
+
+//string sanitization
 const validator = require('validator')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
@@ -6,7 +8,6 @@ const Task = require('./task')
 
 //defining structure of model
 //validation
-//string sanitization
 
 const userSchema = new mongoose.Schema({
     name: {
